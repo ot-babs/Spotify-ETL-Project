@@ -6,6 +6,14 @@ Pre Requisite to run
 2. Ensure that WSL 2 is active on the docker
 3. Recommend using dbeaver to access the database
 
+Setting Up the Docker
+1. In VScode - Setup the Terminal to be n the folder where the docker is located
+2. Creating the directorys needed: In the terminal write mkdir ./dags ./plugins ./logs
+3. Next in the terminal: Type echo -e "AIRFLOW_UID=$(id -u)\AIRFLOW_GID=0" > .env
+4. Now to initiate our airflow in the terminal: Type docker-compose up airflow-init
+5. Finally to run the airflow, type in the terminal:docker-compose up
+6. To check health of our docker we type: docker ps
+
 Running the ETL
 1. Ensure all zipped files/folders are decomposed all together and saved in the same location
 2. Open up VScode - and have a terminal open
