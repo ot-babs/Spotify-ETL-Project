@@ -23,7 +23,8 @@ Running the ETL
 5. Once this is active you can now run the dag or wait for it to run when it's scheduled
 
 Notes:
-- Necessary ETL files are found in the dags folder
+- Necessary ETL files are found in the dags folder 
+- IMPORTANT - copy our dag documents/replace the dag folder with the one created in our setting up docker instructionn
 - Within the spotify_dag.py (located in the dags folder) we you can change the schedule_interval to either minutes/ hours /days 
 - Also Note that in order for the scheduler to work your computer cannot switch off similar to the cloud.
 - Note that this is going to be my spotify played songs, to use your own you will need to remove the Refresh part of the spotify_etl and manually insert your played 
